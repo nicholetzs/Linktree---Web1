@@ -1,0 +1,75 @@
+import React from "react";
+import { Github, Instagram, Linkedin, ExternalLink } from "lucide-react";
+
+export default function Component() {
+  return (
+    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-4 bg-[url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80')] bg-cover bg-center">
+      <div className="max-w-md w-full bg-gray-900 bg-opacity-80 rounded-lg shadow-lg p-6 space-y-6">
+        <div className="flex flex-col items-center space-y-2">
+          <img
+            src="https://images.unsplash.com/photo-1614642240262-a452c2c11724?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80"
+            alt="Profile"
+            className="w-24 h-24 rounded-full border-2 border-purple-500"
+          />
+          <h1 className="text-2xl font-bold">Astro Data Explorer</h1>
+          <p className="text-purple-300">Exploring the cosmos through data</p>
+        </div>
+
+        <div className="flex justify-center space-x-4">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-white"
+          >
+            <Github className="w-6 h-6" />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-white"
+          >
+            <Instagram className="w-6 h-6" />
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-white"
+          >
+            <Linkedin className="w-6 h-6" />
+          </a>
+        </div>
+
+        <div className="space-y-4">
+          <a
+            href="#"
+            className="block w-full py-2 px-4 bg-purple-600 hover:bg-purple-700 rounded text-center transition duration-300"
+          >
+            Latest Cosmic Data Analysis
+          </a>
+          <a
+            href="#"
+            className="block w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 rounded text-center transition duration-300"
+          >
+            Subscribe to Stargazer Newsletter
+          </a>
+          <a
+            href="#"
+            className="block w-full py-2 px-4 bg-green-600 hover:bg-green-700 rounded text-center transition duration-300"
+          >
+            Upcoming Space Events
+          </a>
+          <a
+            href="#"
+            className="block w-full py-2 px-4 bg-yellow-600 hover:bg-yellow-700 rounded text-center transition duration-300"
+          >
+            Support My Research{" "}
+            <ExternalLink className="inline-block w-4 h-4 ml-2" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
